@@ -108,7 +108,7 @@ const LoginForm: React.FC = () => {
     useEffect(() => {
         const user = localStorage.getItem("authUser");
         if (user) {
-            navigate("/main");
+            navigate("/home");
         }
     }, [navigate]);
 
@@ -129,7 +129,7 @@ const LoginForm: React.FC = () => {
             const result = await res.json();
             if (res.ok && result.token) {
                 localStorage.setItem("authUser", JSON.stringify(result));
-                navigate("/main");
+                navigate("/home");
             } else {
                 alert(result.message || "Login failed");
             }
