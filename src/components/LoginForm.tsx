@@ -81,7 +81,7 @@ const FloatingInput = ({
                         aria-label={showPassword ? "Hide password" : "Show password"}
                     >
                         <img
-                            src={showPassword ? "/visibility.svg" : "/visibility.svg"}
+                            src={showPassword ? "/visibility-off.svg" : "/visibility.svg"}
                             alt={showPassword ? "Hide" : "Show"}
                             className="visibility-icon"
                         />
