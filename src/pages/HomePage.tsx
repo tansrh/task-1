@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
         <div className="user-section">
           <img src="/user.svg" alt="User" className="user-icon" />
           <div className="user-details">
-            <div className="user-name">{user?.username || "User"}</div>
+            <div className="user-name">{`${user?.firstName} ${user?.lastName}`}</div>
             {user?.email && <div className="user-email">{user.email}</div>}
           </div>
            <button className="logout-btn" onClick={handleLogout}>
