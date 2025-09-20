@@ -173,6 +173,7 @@
     font-size: 0.95rem;
     font-weight: 500;
     transition: text-decoration 0.2s;
+    cursor: pointer;
   }
 
   .forgot-password:hover {
@@ -183,6 +184,11 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+
+    input[type="checkbox"],
+    label {
+      cursor: pointer;
+    }
   }
 
   .login-btn {

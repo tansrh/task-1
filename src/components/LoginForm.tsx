@@ -127,7 +127,7 @@ const LoginForm: React.FC = () => {
                 body: JSON.stringify(payload),
             });
             const result = await res.json();
-            if (res.ok && result.token) {
+            if (res.status == 200 && result.accessToken) {
                 localStorage.setItem("authUser", JSON.stringify(result));
                 navigate("/home");
             } else {
